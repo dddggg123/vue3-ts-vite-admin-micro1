@@ -6,7 +6,7 @@ import qiankun from 'vite-plugin-qiankun'
 export default defineConfig({
   plugins: [vue(), qiankun('app-vue', { useDevMode: true })],
   server: {
-    port: 7888,
+    port: 6888,
     open: true
   }
 })
