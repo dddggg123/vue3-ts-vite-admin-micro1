@@ -9,5 +9,5 @@ export default defineConfig({
     port: 6888,
     open: true
   },
-  base: './'
+  base: '/micro1/'
 })
