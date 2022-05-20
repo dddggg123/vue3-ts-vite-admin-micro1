@@ -38,6 +38,5 @@ if (qiankunWindow.__POWERED_BY_QIANKUN__) {
 
 if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
   render()
-
   console.log('独立运行')
 }
