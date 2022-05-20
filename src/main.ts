@@ -7,7 +7,7 @@ import { renderWithQiankun, qiankunWindow } from 'vite-plugin-qiankun/dist/helpe
 let app: any
 
 function render(props: any = {}) {
-  const { container, routerBase = '/app-vue' } = props
+  const { container, routerBase } = props
   const router = createRouter({
     routes,
     history: createWebHistory(routerBase),
