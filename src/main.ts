@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import routes from './router'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import { renderWithQiankun, qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
 
 let app: any
@@ -10,7 +10,7 @@ function render(props: any = {}) {
   const { container, routerBase } = props
   const router = createRouter({
     routes,
-    history: createWebHistory(routerBase),
+    history: createWebHashHistory(routerBase),
   })
 
   app = createApp(App)
