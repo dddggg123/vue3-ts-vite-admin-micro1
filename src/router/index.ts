@@ -4,12 +4,12 @@ import type { RouteRecordRaw } from 'vue-router'
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    name: 'home',
+    name: 'app-one-home',
     component: () => import('../views/home.vue')
   },
   {
     path: '/about',
-    name: 'vue-about',
+    name: 'app-one-about',
     component: () => import('../views/about.vue')
   }
 ]
