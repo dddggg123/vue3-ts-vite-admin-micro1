@@ -1,4 +1,4 @@
 <template>
-  <h1>Vue About Page</h1>
-  <router-link to="/">home</router-link>
+  <h1>子应用关于界面</h1>
+  <router-link to="/">返回</router-link>
 </template>
