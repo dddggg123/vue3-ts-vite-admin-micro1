@@ -8,6 +8,7 @@
 
 <script lang="ts" setup>
 import { useRouter } from 'vue-router'
+import { onMounted } from 'vue'
 
 const router = useRouter();
 
@@ -16,7 +17,6 @@ function microNavigteHandler() {
 }
 
 function mainNavigteHandler() {
-  console.log('我点击了主应用跳转按钮');
   window.history.pushState({
     user: {}
   }, '', '/')
@@ -24,6 +24,11 @@ function mainNavigteHandler() {
   //   user: {}
   // }, '', '/')
 }
+
+onMounted(() => {
+  localStorage.setItem('msg', '');
+ 
+})
 </script>
 
 <style lang="scss">
