@@ -1,5 +1,5 @@
 <template>
-  <div class="app-two-home-container">
+  <div class="app-one-home-container">
     <h1>子应用首页界面</h1>
     <button class="btn" @click="microNavigteHandler"> 子应用内部路由跳转 </button>
     <button class="btn" @click="mainNavigteHandler"> 控制主应用跳转 </button>
@@ -16,18 +16,23 @@ function microNavigteHandler() {
 }
 
 function mainNavigteHandler() {
-  // window.history.pushState({
+  console.log('我点击了主应用跳转按钮');
+  window.history.pushState({
+    user: {}
+  }, '', '/')
+  // window.history.replaceState({
   //   user: {}
-  // }, '', '/home')
+  // }, '', '/')
 }
 </script>
 
 <style lang="scss">
-.app-two-home-container {
-  height: 100%;
+.app-one-home-container {
+  width: 500px;
+  height: 800px;
+  background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
 
   .btn {
     width: 180px;

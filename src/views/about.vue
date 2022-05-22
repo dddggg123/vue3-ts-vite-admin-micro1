@@ -7,9 +7,10 @@
 
 <style lang="scss">
 .app-two-about-container {
-  height: 100%;
+  width: 500px;
+  height: 800px;
+  background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
 }
 </style>
