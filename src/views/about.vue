@@ -15,16 +15,18 @@ let param = ref('主应用传递的参数:');
 
 onMounted(() => {
   let msg: any = localStorage.getItem('msg');
-  param.value  = param.value + msg;
+  let desc: any = sessionStorage.getItem('desc');
+  param.value  = param.value + msg + desc;
 })
 </script>
 
 <style lang="scss">
 .app-two-about-container {
-  width: 500px;
-  height: 800px;
+  width: 480px;
+  height: 600px;
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
 }
 </style>
