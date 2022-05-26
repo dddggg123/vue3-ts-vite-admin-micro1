@@ -20,6 +20,7 @@ function mainNavigteHandler() {
   window.history.pushState({
     user: {}
   }, '', '/')
+  // router.push('/');
   // window.history.replaceState({
   //   user: {}
   // }, '', '/')
@@ -27,17 +28,18 @@ function mainNavigteHandler() {
 
 onMounted(() => {
   localStorage.setItem('msg', '');
- 
+  sessionStorage.setItem('desc', '');
 })
 </script>
 
 <style lang="scss">
 .app-one-home-container {
-  width: 500px;
+  width: 480px;
   height: 300px;
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
 
   .btn {
     width: 180px;
@@ -48,6 +50,7 @@ onMounted(() => {
     border-radius: 10px;
     background-color: cornflowerblue;
     color: #fff;
+    cursor: pointer;
   }
 }
 </style>
