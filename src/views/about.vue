@@ -22,7 +22,7 @@ onMounted(() => {
 <style lang="scss">
 .app-two-about-container {
   width: 500px;
-  height: 800px;
+  height: 300px;
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
